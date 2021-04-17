@@ -9,7 +9,7 @@ module.exports = {
   },
   devtool: 'inline-source-map', // 仅开发环境，生产环境最好去掉
   devServer: {
-    contentBase: './dist'
+    contentBase: './docs'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -20,7 +20,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   module: {
     rules: [
