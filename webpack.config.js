@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,7 +17,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '灵感发生器',
       template: 'index.html'
-    })
+    }),
+    new CnameWebpackPlugin({
+      domain: 'jshpy.cn',
+    }),
   ],
   output: {
     filename: '[name].bundle.js',

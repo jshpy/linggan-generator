@@ -1616,6 +1616,11 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
+cname-webpack-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/cname-webpack-plugin/download/cname-webpack-plugin-3.0.0.tgz#07260b0774cbd714b963f71b8f45886893098107"
+  integrity sha1-ByYLB3TL1xS5Y/cbj0WIaJMJgQc=
+
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
