@@ -12,7 +12,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '灵感发生器',
       template: './src/index.html',
-      favicon: path.resolve(__dirname, 'favicon.ico')
+      favicon: './favicon.ico'
     }),
     new CnameWebpackPlugin({
       domain: 'jshpy.cn',
