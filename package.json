@@ -1,5 +1,8 @@
 {
   "name": "linggan-generator",
+  "sideEffects": [
+    "*.scss"
+  ],
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -7,8 +10,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "webpack serve",
-    "build": "export NODE_ENV=production && webpack",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,8 +41,10 @@
     "sass": "^1.32.10",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }

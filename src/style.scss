@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333333;
+}
+
+.text-content{
+    padding-left: 50px;
+    padding-top: 20px;
+    user-select: none;
+    p{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        user-select:unset;
+        &>span{
+            color: #27AE60;
+        }
+    }
+    .en{
+        margin-top: 20px;
+    }
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr minmax(800px, 1440px) 1fr;
+    height: 100vh;
+    align-items: center;
+    #left{
+        grid-column: 1/2;
+    }
+    #center{
+        // border: 1px solid black;
+        grid-column: 2/3;
+        height: 600px;
+        position: relative;
+    }
+    #right{
+        grid-column: 3/4;
+    }
+}
+
+#human-img{
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+}
+#shanghai-img{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    z-index: -1;
+}
+#sun-img{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    filter: saturate(500%);
+    cursor: pointer;
+    &:hover{
+        filter: saturate(800%);
+    }
+}
+
+#bird-img{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+
+#plane-img{
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+}
+
+#social-icon{
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    div {
+        margin-top: 10px;
+        cursor: pointer;
+        transition: all .25s ease;
+    }
+    div:hover{
+        transition: all .25s ease;
+        transform: scale(1.2);
+    }
+    #wchat{
+        position:relative;
+        right: 2px;
+        top: 3px;
+    }
+}
