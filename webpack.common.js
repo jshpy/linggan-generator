@@ -11,7 +11,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: '灵感发生器',
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: path.resolve(__dirname, 'favicon.ico')
     }),
     new CnameWebpackPlugin({
       domain: 'jshpy.cn',
