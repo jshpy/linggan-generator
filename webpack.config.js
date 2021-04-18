@@ -8,7 +8,7 @@ module.exports = {
     app: './src/index.js',
     print: './src/print.js'
   },
-  devtool: 'inline-source-map', // 仅开发环境，生产环境最好去掉
+  devtool: process.env.NODE_ENV==='production'? undefined :'inline-source-map', // 仅开发环境，生产环境最好去掉
   devServer: {
     contentBase: './docs'
   },
